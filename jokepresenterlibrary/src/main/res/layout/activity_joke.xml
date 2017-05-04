@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="bakingapp.nanodegree.appsfactory.abe.jokepresenterlibrary.presenter.JokePresenter"/>
+    </data>
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="bakingapp.nanodegree.appsfactory.abe.jokepresenterlibrary.JokeActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{presenter.mJoke}"
+            android:gravity="center"
+            android:padding="@dimen/std_margin"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</layout>
+
